@@ -1,0 +1,463 @@
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url('fonts/Gilroy-Regular.ttf');
+    src: url('fonts/Gilroy-Regular.ttf') format('ttf');
+}
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url('fonts/Gilroy-Medium.ttf');
+    src: url('fonts/Gilroy-Medium.ttf') format('ttf');
+}
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url('fonts/Gilroy-SemiBold.ttf');
+    src: url('fonts/Gilroy-SemiBold.ttf') format('ttf');
+}
+@font-face {
+    font-family: "Gilroy-thin";
+    src: url('fonts/Gilroy-Thin.ttf');
+    src: url('fonts/Gilroy-Thin.ttf') format('ttf');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    width: 100%;
+    height: auto;
+    padding: 0 2vw;
+    overflow: hidden;
+}
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+}
+.left-nav{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.home{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* height: 18px; */
+    overflow: hidden;
+    cursor: pointer;
+}
+/* .home a{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.6s;
+}
+.home:hover a:nth-child(1){
+    margin-top: -18px; 
+} */
+.pricing{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* height: 18px; */
+    overflow: hidden;
+}
+/* .pricing a{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.6s;
+}
+.pricing:hover a:nth-child(1){
+    margin-top: -18px;
+} */
+.product{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* height: 18px; */
+    overflow: hidden;
+}
+/* .product a{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.6s;
+}
+.product:hover a:nth-child(1){
+    margin-top: -18px;
+} */
+.left-nav a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    color: #000;
+}
+.nav>a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: "Gilroy-Bold";
+    font-size: 16px;
+    color: #000;
+}
+.right-nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    /* height: 18px; */
+    overflow: hidden;
+}
+/* .right-nav a{
+    transition: all cubic-bezier(0.19, 1, 0.22, 1)0.6s;
+}
+.right-nav:hover a:nth-child(1){
+    margin-top: -18px;
+} */
+.right-nav a{
+    text-decoration: none;
+    margin: 0 20px;
+    font-family: "Gilroy-Medium";
+    font-size: 14px;
+    color: #000;
+}
+.part1{
+    width: 100%;
+    height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 130px 0 0;
+}
+.left-part1{
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+}
+.left-part1 h3{
+    font-family: "Gilroy-Medium";
+    font-size: 16px;
+    font-weight: 500;
+}
+.left-part1 h1{
+    font-family: "Gilroy-Bold";
+    font-size: 20px;
+    font-weight: 500;
+}
+.left-part1 p{
+    font-family: "Gilroy-regular";
+    font-size: 12px;
+    font-weight: 500;
+    width: 50%;
+    margin: 5px 0 20px;
+}
+.left-part1-img{
+    width: 140px;
+    height: 180px;
+}
+.left-part1-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.center-part1{
+    position: relative;
+}
+.main-heading{
+    position: absolute;
+    top: -12%;
+    left: -7%;
+}
+.main-heading h1{
+    font-size: 50px;
+    font-family: "Gilroy-Bold";
+    font-weight: 500;
+    line-height: 45px;
+
+}
+.center-part1-img{
+    width: 300px;
+    height: 430px;
+}
+.center-part1-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.center-part1 p{
+    font-size: 16px;
+    font-family: "Gilroy-regular";
+    width: 30%;
+    margin-top: 30px;
+}
+.right-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+.right-part1 i{
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 50px;
+    font-size: 16px;
+    font-weight: 100;
+    padding: 10px;
+    cursor: pointer;
+}
+.right-part1 p{
+    font-size: 14px;
+    font-family: "Gilroy-Regular";
+    cursor: pointer;
+}
+.part2{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    padding: 60px 0 50px;
+}
+.part2-data h1{
+    font-size: 20px;
+    font-family: "Gilroy-thin";
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.part2-data p{
+    font-family: "Gilroy-Medium";
+    font-size: 1.8vw;
+    text-align: right;
+    width: 72%;
+    margin: 0 auto;
+    margin-right: 0;
+    letter-spacing: 1px;
+}
+.part2-img1{
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+    background-image: url("media/img/bluegirl.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: -8px;
+}
+.part2-img2{
+    display: inline-block;
+    width: 80px;
+    height: 35px;
+    background-image: url("media/img/shaljam.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: -8px;
+}
+.part2-img3{
+    display: inline-block;
+    width: 60px;
+    height: 35px;
+    background-image: url("media/img/grass.jpg");
+    background-position: center;
+    background-size: cover;
+    border-radius: 50px;
+    object-fit: cover;
+    object-position: center;
+    margin-bottom: -8px;
+}
+.part3{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+.left-part3{
+    width: 250px;
+    height: 470px;
+}
+.left-part3-img{
+    width: 100%;
+    height: 350px;
+}
+.left-part3-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.left-part3 h1{
+    font-family: "Gilroy-Bold";
+    font-size: 20px;
+    font-weight: 500;
+    margin: 25px 0 10px;
+    width: 50%;
+}
+.left-part3 p{
+    font-family: "Gilroy-regular";
+    font-size: 14px;
+    font-weight: 500;
+    width: 80%;
+}
+.center-part3{
+    width: 320px;
+    height: 620px;
+}
+.center-part3-img{
+    width: 100%;
+    height: 500px;
+}
+.center-part3-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.center-part3-data{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.center-part3-data h1{
+    font-family: "Gilroy-Bold";
+    font-size: 20px;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+.center-part3-data p{
+    font-family: "Gilroy-regular";
+    font-size: 14px;
+    font-weight: 500;
+    width: 70%;
+    text-align: center;
+}
+.right-part3{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.right-part3-info{
+    width: 320px;
+    height: 770px;
+}
+.right-part3-img{
+    width: 100%;
+    height: 650px;
+}
+.right-part3-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+.right-part3 h1{
+    font-family: "Gilroy-Bold";
+    font-size: 20px;
+    font-weight: 500;
+    text-align: right;
+    margin: 25px 0 10px;
+}
+.right-part3 p{
+    font-family: "Gilroy-regular";
+    font-size: 14px;
+    font-weight: 500;
+    width: 70%;
+    margin: 0 auto;
+    margin-right: 0;
+    text-align: right;
+}
+.part4{
+    width: 100%;
+    height: auto;
+    padding: 30px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.left-part4{
+    width: 75%;
+    position: relative;
+}
+.left-part4 img{
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    object-position: center;
+}
+.left-part4 img:nth-child(2){
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.right-part4{
+    margin: 0 auto;
+    width: 20%;
+}
+.right-part4 h1{
+    font-family: "Gilroy-Bold";
+    font-size: 30px;
+    font-weight: 500;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.right-part4 p{
+    font-family: "Gilroy-Regular";
+    font-size: 16px;
+    font-weight: 500;
+    width: 80%;
+}
+.part5{
+    width: 100%;
+    height: 100vh;
+    padding: 30px 0;
+    position: relative;
+}
+.part5 video{
+    width: 100%;
+    height: auto;
+    scale: 1.2;
+    margin-top: 5vh;
+    opacity: 0;
+}
+.hovering-data{
+    background: #fff;
+    width: 20%;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+    padding: 20px 0;
+    border-radius: 15px;
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+
+}
+.hovering-data h1{
+    font-family: "Gilroy-Bold";
+    font-size: 30px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.part5-btn p{
+    font-size: 16px;
+    font-family: "Gilroy-Regular";
+    padding: 15px 30px;
+    background: rgba(192, 192, 192, 0.646);
+    border-radius: 50px;
+    cursor: pointer;
+
+}
